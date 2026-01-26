@@ -4,4 +4,7 @@ export const playerService = {
     getAllPlayers: () => {
         return api.get('/player')
     },
+    getAllPlayersSortedByPpr: () => {
+        return api.get('/player/sorted/ppr_per_game')
+    }
 }
