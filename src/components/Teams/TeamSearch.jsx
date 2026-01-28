@@ -26,7 +26,7 @@ const TeamSearch = ({ searchTerm, setSearchTerm }) => {
             {searchTerm && (
                 <button 
                     onClick={() => setSearchTerm('')}
-                    className="absolute right-[0%] top-1/2 -translate-y-1/2 mr-4 text-amber-400 hover:text-red-400 font-bold text-xl hover:cursor-pointer"
+                    className="absolute right-[0%] top-1/2 -translate-y-1/2 mr-4 text-white hover:text-amber-400 font-bold text-xl hover:cursor-pointer"
                 >
                     X
                 </button>

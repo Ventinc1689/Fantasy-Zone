@@ -1,6 +1,23 @@
 import React from 'react'
 
 const PlayerList = ({ players }) => {
+
+    // Returns specfic color based on player position
+    const getPositionColor = (position) => {
+        switch(position) {
+            case 'QB':
+                return 'text-green-400';
+            case 'RB':
+                return 'text-rose-400';
+            case 'WR':
+                return 'text-cyan-400';
+            case 'TE':
+                return 'text-violet-500';
+            default:
+                return 'text-white';
+        }
+    };
+
     return (
         <div className="w-full">
             <table className="w-full border-collapse">
@@ -19,18 +36,18 @@ const PlayerList = ({ players }) => {
                 </thead>
 
                 {/* Table Body */}
-                <tbody className="divide-y divide-gray-700">
+                <tbody className="divide-y divide-gray-600">
                     {players.map((player) => (
                         <tr key={player.player_id} 
                             className="hover:bg-gray-800 hover:cursor-pointer text-[12px] md:text-[14px] lg:text-[16px]"
                         >
-                            <td className="py-5 px-4 text-left">{player.name}</td>
-                            <td className="py-5 px-4 text-center">{player.position}</td>
+                            <td className="py-5 px-4 text-left font-semibold text-amber-400">{player.name}</td>
+                            <td className={`py-5 px-4 text-center ${getPositionColor(player.position)}`}>{player.position}</td>
                             <td className="py-5 px-4 text-center">{player.team}</td>
                             <td className="py-5 px-4 text-center">{player.games}</td>
                             <td className="py-5 px-4 text-center">{player.pprPerGame}</td>
-                            <td className="py-5 px-4 text-center hidden md:table-cell">1</td>
-                            <td className="py-5 px-4 text-center hidden lg:table-cell">2</td>
+                            <td className={`py-5 px-4 text-center hidden md:table-cell ${getPositionColor(player.position)}`}>{player.position}{player.positionRank}</td>
+                            <td className="py-5 px-4 text-center hidden lg:table-cell">{player.overallRank}</td>
                         </tr>
                     ))}
                 </tbody>

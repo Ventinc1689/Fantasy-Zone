@@ -6,5 +6,8 @@ export const playerService = {
     },
     getAllPlayersSortedByPpr: () => {
         return api.get('/player/sorted/ppr_per_game')
-    }
+    },
+    getAllPlayersFromTeamSorted: (team) => {
+        return api.get(`/player/sorted/ppr_per_game/team/${team}`)
+    },
 }

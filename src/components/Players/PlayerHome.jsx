@@ -17,7 +17,29 @@ const PlayerHome = () => {
             try {
                 setLoading(true);
                 const players = await playerService.getAllPlayersSortedByPpr();
-                setPlayers(players.data);
+
+                // Calculate overall ranking
+                const playerRanks = players.data.map((player, index) => ({
+                    ...player,
+                    overallRank: index + 1
+                }));
+
+                // Calculate positon ranking
+                const positionCounts = {};
+                const ranksByPosition = playerRanks.map(player => {
+                    const position = player.position;
+                    if (!positionCounts[position]) {
+                        positionCounts[position] = 0;
+                    }
+                    positionCounts[position]++;
+
+                    return {
+                        ...player,
+                        positionRank: positionCounts[position]
+                    };
+                });
+
+                setPlayers(ranksByPosition);
             } catch (error) {
                 setError(error.message);
             } finally {

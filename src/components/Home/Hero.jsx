@@ -35,7 +35,7 @@ const Hero = () => {
 
                         {/* Get Started Button */}
                         <button className="button-background mt-5 text-[18px] justify-center flex items-center" 
-                        onClick={() => navigate('/teams')}>
+                        onClick={() => navigate('/players')}>
                             Get Started
                             <img
                                 src={enter}

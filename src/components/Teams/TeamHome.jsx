@@ -4,6 +4,7 @@ import { teamService } from '../../services/teamService.js'
 import TeamList from './TeamList.jsx'
 import TeamSearch from './TeamSearch.jsx'
 import RecordSort from './RecordSort.jsx'
+import TeamSummary from './TeamSummary.jsx'
 
 const TeamHome = () => {
     const [teams, setTeams] = useState([]);
@@ -11,6 +12,7 @@ const TeamHome = () => {
     const [error, setError] = useState(null);
     const [searchTerm, setSearchTerm] = useState('');
     const [sortByRecord, setSortByRecord] = useState(false);
+    const [selectedTeam, setSelectedTeam] = useState(null);
 
     // Fetch all teams
     useEffect(() => {
@@ -71,7 +73,19 @@ const TeamHome = () => {
                 </div>
             </div>
             
-            <TeamList teams={filteredTeams} />
+            {/* List of all nfl teams  */}
+            <TeamList 
+                teams={filteredTeams} 
+                onTeamClick={setSelectedTeam}
+            />
+
+            {/* Summary page for teams when clicked */}
+            {selectedTeam && (
+                <TeamSummary 
+                    team={selectedTeam}
+                    onClose={() => setSelectedTeam(null)}
+                />
+            )}
         </div>
     )
 }
