@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { playerService } from '../../services/playerService.js'
 import PlayerSearch from '../Players/PlayerSearch.jsx'
 import PlayerList from '../Players/PlayerList.jsx'
+import PlayerSummary from './PlayerSummary.jsx'
 
 const PlayerHome = () => {
     const [players, setPlayers] = useState([]);
@@ -10,6 +11,7 @@ const PlayerHome = () => {
     const [error, setError] = useState(null);
     const [searchTerm, setSearchTerm] = useState('');
     const [sortByPpr, setSortByPpr] = useState(true);
+    const [selectedPlayer, setSelectedPlayer] = useState(null);
 
     // Fetch all players
     useEffect(() => {
@@ -81,8 +83,18 @@ const PlayerHome = () => {
 
             {/* List of all players matching all filters */}
             <div className="flex-1 overflow-y-auto mt-52 px-5">
-                <PlayerList players={filteredPlayers}/>
+                <PlayerList 
+                    players={filteredPlayers}
+                    onPlayerClick={setSelectedPlayer}
+                />
             </div>
+
+            {selectedPlayer && (
+                <PlayerSummary 
+                    player={selectedPlayer}
+                    onClose={() => setSelectedPlayer(null)}
+                />
+            )}
         </div>
     )
 }

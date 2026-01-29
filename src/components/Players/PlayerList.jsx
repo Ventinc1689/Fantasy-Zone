@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PlayerList = ({ players }) => {
+const PlayerList = ({ players, onPlayerClick }) => {
 
     // Returns specfic color based on player position
     const getPositionColor = (position) => {
@@ -40,6 +40,7 @@ const PlayerList = ({ players }) => {
                     {players.map((player) => (
                         <tr key={player.player_id} 
                             className="hover:bg-gray-800 hover:cursor-pointer text-[12px] md:text-[14px] lg:text-[16px]"
+                            onClick={() => onPlayerClick(player)}
                         >
                             <td className="py-5 px-4 text-left font-semibold text-amber-400">{player.name}</td>
                             <td className={`py-5 px-4 text-center ${getPositionColor(player.position)}`}>{player.position}</td>

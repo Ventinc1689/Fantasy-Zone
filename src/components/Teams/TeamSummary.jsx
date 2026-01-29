@@ -93,7 +93,7 @@ const TeamSummary = ({ team, onClose }) => {
                         />
                         
                         {/* Team Info */}
-                        <div className="flex flex-col font-semibold text-[12px] md:text-[16px] lg:text-[20px] text-black gap-2">
+                        <div className="flex flex-col font-semibold text-[12px] md:text-[16px] text-black gap-2 justify-center">
                             <p className="font-bold text-[18px] md:text-[22px] lg:text-[28px]">{team.name}</p>
 
                             <div className="flex flex-row gap-5">
