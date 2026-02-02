@@ -7,6 +7,13 @@ Fantasy football analytic platform allowing users to compare and analyze team/pl
 - Teams page that includes searching/sorting teams
 - Each team includes a summary of team stat and relevant fantasy players from that team sorted based off PPR
 - Players page that includes a top 500 relevant fantasy players with search functionality
+- A summary page of each player with relevant stats
+- Filtering of players based on:
+    * Position
+    * Min games played
+    * Passing attempts, completions, yards, touchdowns, interceptions
+    * Rushing attempts, yard, y/a, touchdowns
+    * Targets, receptions, receiving yards, touchdowns, y/r
 - Fully responsive layout 
 
 ## Photos
