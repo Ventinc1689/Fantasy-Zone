@@ -18,10 +18,10 @@ Fantasy football analytic platform allowing users to compare and analyze team/pl
 
 ## Photos
 
-<img width="980" height="759" alt="Screenshot 2026-01-28 at 3 26 58 PM" src="https://github.com/user-attachments/assets/75b6505b-936c-4235-a17f-40e71ee83b75" />
+<img width="1384" height="808" alt="Screenshot 2026-02-01 at 7 14 23 PM" src="https://github.com/user-attachments/assets/4504fc86-e7eb-42d5-b912-df0b1af73e52" />
+<img width="515" height="812" alt="Screenshot 2026-02-01 at 7 14 42 PM" src="https://github.com/user-attachments/assets/499e24c6-5fb8-4edb-8df8-40ee27a2f00d" />
+<img width="519" height="806" alt="Screenshot 2026-02-01 at 7 15 05 PM" src="https://github.com/user-attachments/assets/462e0f30-cd6c-42b5-be51-30f13a8082c2" />
 
-<img width="946" height="767" alt="Screenshot 2026-01-28 at 3 27 58 PM" src="https://github.com/user-attachments/assets/eb305300-f525-48b5-b2d4-604a348dfcc2" />
-
-<img width="515" height="769" alt="Screenshot 2026-01-28 at 3 28 48 PM" src="https://github.com/user-attachments/assets/3fde98be-340b-42fc-b650-4cd9c7d9c61b" />
-
-<img width="1476" height="857" alt="Screenshot 2026-01-28 at 3 29 21 PM" src="https://github.com/user-attachments/assets/0580409c-d49f-4b3e-acf4-a871383a8393" />
+<img width="1265" height="810" alt="Screenshot 2026-02-01 at 7 15 38 PM" src="https://github.com/user-attachments/assets/5c41f8b6-e5a2-4532-9ec2-4491d9789ee8" />
+<img width="512" height="809" alt="Screenshot 2026-02-01 at 7 15 55 PM" src="https://github.com/user-attachments/assets/7512969b-c54c-4abe-98b2-a06511253b6b" />
+<img width="1409" height="797" alt="Screenshot 2026-02-01 at 7 16 19 PM" src="https://github.com/user-attachments/assets/63db08e5-c4bb-4638-a109-dfd5a5b97388" />
