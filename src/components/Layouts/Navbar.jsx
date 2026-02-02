@@ -61,7 +61,7 @@ const Navbar = ({ isOpen, onClose }) => {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <div className="fixed z-200 inset-0 md:hidden">
+                <div className="fixed z-300 inset-0 md:hidden">
                     <div className="h-full top-0 left-0 w-full text-white bg-black/80 backdrop-blur-lg">
 
                         {/* Header Section and Closing Button */}

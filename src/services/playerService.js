@@ -10,4 +10,7 @@ export const playerService = {
     getAllPlayersFromTeamSorted: (team) => {
         return api.get(`/player/sorted/ppr_per_game/team/${team}`)
     },
+    getPlayerByPositionSorted: (position) => {
+        return api.get(`/player/sorted/ppr_per_game/position/${position}`)
+    },
 }

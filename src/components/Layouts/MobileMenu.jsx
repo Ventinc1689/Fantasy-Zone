@@ -6,7 +6,7 @@ const MobileMenu = ({ toggleMenu }) => {
         <>
             {/* Menu icon - visible on all pages when screen is small */}
             <button 
-            className="fixed top-6 right-6 z-100 md:hidden"
+            className="fixed top-6 right-6 z-200 md:hidden"
             onClick={toggleMenu}
             >
                 <img 

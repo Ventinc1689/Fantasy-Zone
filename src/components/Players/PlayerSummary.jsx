@@ -47,7 +47,7 @@ const PlayerSummary = ({ player, onClose }) => {
                                 <div className={`p-2 rounded-lg ${getPositionColor(player.position)}`}>{player.position}{player.positionRank}</div>
                                 <div className="p-2 bg-gray-800 rounded-lg">{player.team}</div>
                                 <div className="p-2 bg-gray-800 rounded-lg">{player.age} yo</div>
-                                <div className="p-2 bg-gray-800 rounded-lg">{player.games}</div>
+                                <div className="p-2 bg-gray-800 rounded-lg">Gm: {player.games}</div>
                                 <div className="p-2 bg-gray-800 rounded-lg">PPR/G: {player.pprPerGame}</div>
                             </div>
                         </div>
@@ -71,16 +71,16 @@ const PlayerSummary = ({ player, onClose }) => {
 
                             <div className="flex flex-col text-white divide-y divide-gray-600 font-bold">
                                 <div className="flex flex-row px-10 py-4 justify-between items-center hover:bg-gray-800">
-                                    <span>Yards:</span><span>{player.passing_yards}</span>
+                                    <span>Passing Attempts:</span><span>{player.passing_attempts}</span>
                                 </div>
                                 <div className="flex flex-row px-10 py-4 justify-between items-center hover:bg-gray-800">
-                                    <span>Attempts:</span><span>{player.passing_attempts}</span>
+                                    <span>Passing Completions:</span><span>{player.passing_completions}</span>
                                 </div>
                                 <div className="flex flex-row px-10 py-4 justify-between items-center hover:bg-gray-800">
-                                    <span>Completions:</span><span>{player.passing_completions}</span>
+                                    <span>Passing Yards:</span><span>{player.passing_yards}</span>
                                 </div>
                                 <div className="flex flex-row px-10 py-4 justify-between items-center hover:bg-gray-800">
-                                    <span>Touchdowns:</span><span>{player.passing_td}</span>
+                                    <span>Passing Touchdowns:</span><span>{player.passing_td}</span>
                                 </div>
                                 <div className="flex flex-row px-10 py-4 justify-between items-center hover:bg-gray-800">
                                     <span>Interceptions:</span><span>{player.interceptions}</span>
@@ -96,16 +96,16 @@ const PlayerSummary = ({ player, onClose }) => {
 
                             <div className="flex flex-col text-white divide-y divide-gray-600 font-bold">
                                 <div className="flex flex-row px-10 py-4 justify-between items-center hover:bg-gray-800">
-                                    <span>Yards:</span><span>{player.rushing_yards}</span>
+                                    <span>Rushing Attempts:</span><span>{player.rushing_attempts}</span>
                                 </div>
                                 <div className="flex flex-row px-10 py-4 justify-between items-center hover:bg-gray-800">
-                                    <span>Attempts:</span><span>{player.rushing_attempts}</span>
+                                    <span>Rushing Yards:</span><span>{player.rushing_yards}</span>
                                 </div>
                                 <div className="flex flex-row px-10 py-4 justify-between items-center hover:bg-gray-800">
-                                    <span>Y/A:</span><span>{player.yard_per_attempt}</span>
+                                    <span>Yards per Rush:</span><span>{player.yard_per_attempt}</span>
                                 </div>
                                 <div className="flex flex-row px-10 py-4 justify-between items-center hover:bg-gray-800">
-                                    <span>Touchdowns:</span><span>{player.rushing_td}</span>
+                                    <span>Rushing Touchdowns:</span><span>{player.rushing_td}</span>
                                 </div>
                             </div>
                         </div>
@@ -124,13 +124,13 @@ const PlayerSummary = ({ player, onClose }) => {
                                     <span>Receptions:</span><span>{player.receptions}</span>
                                 </div>
                                 <div className="flex flex-row px-10 py-4 justify-between items-center hover:bg-gray-800">
-                                    <span>Yards:</span><span>{player.reception_yards}</span>
+                                    <span>Receiving Yards:</span><span>{player.reception_yards}</span>
                                 </div>
                                 <div className="flex flex-row px-10 py-4 justify-between items-center hover:bg-gray-800">
-                                    <span>Y/R:</span><span>{player.yard_per_reception}</span>
+                                    <span>Yards per Reception:</span><span>{player.yard_per_reception}</span>
                                 </div>
                                 <div className="flex flex-row px-10 py-4 justify-between items-center hover:bg-gray-800">
-                                    <span>Touchdowns:</span><span>{player.reception_td}</span>
+                                    <span>Receiving Touchdowns:</span><span>{player.reception_td}</span>
                                 </div>
                             </div>
                         </div>
